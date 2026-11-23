@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website portofolio pribadi">
+  <title>My Portfolio | Angel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-loader-enhanced.css">
+</head>
+<body>
+  <!-- INTRO LOADER -->
+  <div class="intro-loader" id="introLoader" aria-label="Loading portfolio">
+    <div class="loader-content">
+      <div class="loader-orbit"><span class="orbit-dot"></span><span class="orbit-dot orbit-dot-two"></span><span class="orbit-core">✦</span></div>
+      <div class="loader-logo">PORTO<span>FOLIO.</span></div>
+      <p class="loader-caption">A LITTLE SPACE OF MINE</p>
+      <div class="loader-bar"><span></span></div>
+      <p class="loader-loading">LOADING MY WORLD <span class="loading-dots">...</span></p>
+      <p class="loader-footnote">collecting little moments ♡</p>
+    </div>
+  </div>
+
+  <div class="background-orb orb-one"></div>
+  <div class="background-orb orb-two"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#beranda">PORTO<span>FOLIO.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#beranda" class="active">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#pengalaman">Pengalaman</a>
+      <a href="#pendidikan">Pendidikan</a>
+      <a href="#kemampuan">Kemampuan</a>
+      <a href="#materi">Materi</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="beranda">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> WELCOME TO MY SPACE</p>
+        <h1>Halo, aku<br><span class="gradient-text">Angelll</span></h1>
+        <p class="hero-description">Mahasiswa | Kreator | Pembelajar</p>
+        <p class="muted">Selamat datang di website portofolioku. Di sini kamu bisa mengenal perjalanan, karya, dan hal-hal yang sedang aku pelajari.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#tentang">Kenali Aku <span>↗</span></a>
+          <a class="button secondary" href="#kontak">Hubungi Aku</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="photo-frame">
+          <div class="photo-label">A LITTLE PIECE OF ME ✦</div>
+          <img id="slideImage" src="images/foto-1.jpg" alt="Foto pribadi Nama Kamu">
+          <div class="photo-overlay"></div>
+          <button class="slide-arrow prev" id="prevSlide" aria-label="Foto sebelumnya">‹</button>
+          <button class="slide-arrow next" id="nextSlide" aria-label="Foto berikutnya">›</button>
+          <div class="slide-count" id="slideCount">01 / 03</div>
+        </div>
+        <div class="floating-note note-top">✦ stay curious</div>
+        <div class="floating-note note-bottom">creating my own story ♡</div>
+      </div>
+    </section>
+
+   <section class="section music-section" id="musik">
+      <div class="music-card glass reveal">
+        <div class="music-art"><span>♫</span><small>MY SOUNDTRACK</small></div>
+        <div class="music-content">
+          <p class="eyebrow">A LITTLE MUSIC BREAK</p>
+          <h2>Playlist <span class="gradient-text">Favorit</span></h2>
+          <p class="muted">Lagu-lagu yang menemani hariku.</p>
+          <div class="track-info"><strong id="trackTitle">Masukkan lagu pertamamu</strong><span id="trackArtist">Nama penyanyi</span></div>
+          <audio id="audioPlayer" preload="metadata"></audio>
+          <div class="player-controls">
+            <button id="prevTrack" aria-label="Lagu sebelumnya">⏮</button>
+            <button id="playPause" class="play-button" aria-label="Putar atau jeda">▶</button>
+            <button id="nextTrack" aria-label="Lagu berikutnya">⏭</button>
+          </div>
+          <div class="progress-wrap"><span id="currentTime">0:00</span><input type="range" id="progress" value="0" min="0" max="100" aria-label="Posisi lagu"><span id="duration">0:00</span></div>
+          <ol class="playlist" id="playlist"></ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="tentang">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 — GET TO KNOW ME</p>
+        <h2>Tentang <span class="gradient-text">Saya</span></h2>
+      </div>
+      <div class="about-card glass reveal">
+        <div class="about-mark">“</div>
+        <div>
+          <h3>Nice to meet u!</h3>
+          <p>Halo! Aku <strong>Angelll</strong>. Aku adalah seseorang yang suka belajar hal baru, mencoba pengalaman berbeda, dan mengembangkan kemampuan diri.</p>
+          <p>Bagiku, setiap proses adalah kesempatan untuk tumbuh. Website ini menjadi ruang untuk membagikan sedikit cerita tentang diriku.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pengalaman">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 — MY JOURNEY</p>
+        <h2>Pengalaman <span class="gradient-text">Saya</span></h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item glass reveal">
+          <span class="timeline-date">2025 — Sekarang</span>
+          <h3>Nama Kegiatan / Organisasi</h3>
+          <p class="muted">Posisi atau Peran</p>
+          <p>Jelaskan tanggung jawab, kegiatan, atau pencapaian yang kamu dapatkan di sini.</p>
+        </article>
+        <article class="timeline-item glass reveal">
+          <span class="timeline-date">2024 — 2025</span>
+          <h3>Nama Pengalaman Lain</h3>
+          <p class="muted">Posisi atau Peran</p>
+          <p>Tambahkan pengalaman kerja, kepanitiaan, proyek, sukarelawan, atau kegiatan lainnya.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="pendidikan">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 — EDUCATION</p>
+        <h2>Riwayat <span class="gradient-text">Pendidikan</span></h2>
+      </div>
+      <div class="education-grid">
+        <article class="info-card glass reveal"><span class="card-icon">✦</span><p class="timeline-date">2024 — Sekarang</p><h3>Nama Universitas</h3><p class="muted">Program Studi / Jurusan</p><p>Tambahkan informasi singkat tentang pendidikanmu.</p></article>
+        <article class="info-card glass reveal"><span class="card-icon">✧</span><p class="timeline-date">2021 — 2024</p><h3>Nama Sekolah</h3><p class="muted">Jurusan (jika ada)</p><p>Tambahkan informasi pendidikan sebelumnya.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="kemampuan">
+      <div class="section-heading reveal">
+        <p class="eyebrow">04 — WHAT I CAN DO</p>
+        <h2>Keahlian & <span class="gradient-text">Kemampuan</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card glass reveal"><span>01</span><h3>Hard Skills</h3><p>HTML & CSS · JavaScript · Microsoft Office · [Keahlian lainnya]</p></div>
+        <div class="skill-card glass reveal"><span>02</span><h3>Soft Skills</h3><p>Komunikasi · Kerja sama tim · Manajemen waktu · Problem solving</p></div>
+        <div class="skill-card glass reveal"><span>03</span><h3>Currently Learning</h3><p>Tulis kemampuan atau bidang baru yang sedang kamu pelajari.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="materi">
+      <div class="section-heading reveal">
+        <p class="eyebrow">05 — MY NOTES</p>
+        <h2>Ruang <span class="gradient-text">Materi</span></h2>
+        <p class="muted">Tempat untuk menyimpan materi, catatan, atau hasil pembelajaranmu.</p>
+      </div>
+      <div class="materials-grid" id="materialsGrid">
+        <article class="material-card glass reveal">
+          <span class="material-tag">PARTISI 01</span>
+          <h3>PARTISI I</h3>
+          <p>Berisi dua submateri pertama. Klik untuk membaca contoh isi partisi.</p>
+          <a href="#partisi-i" class="text-link" data-open-material="partisi-i">Lihat materi ↗</a>
+        </article>
+        <article class="material-card glass reveal">
+          <span class="material-tag">PARTISI 02</span>
+          <h3>PARTISI II</h3>
+          <p>Berisi dua submateri berikutnya. Klik untuk membaca contoh isi partisi.</p>
+          <a href="#partisi-ii" class="text-link" data-open-material="partisi-ii">Lihat materi ↗</a>
+        </article>
+      </div>
+
+      <div class="material-detail-wrap" id="materialDetails" hidden>
+        <article class="material-detail" id="partisi-i" hidden>
+          <span class="material-tag">PARTISI 01</span>
+          <h3>PARTISI I</h3>
+          <div class="material-topic glass">
+            <span class="material-tag">SUBMATERI 01</span>
+            <h4>Pengantar Materi</h4>
+            <p>Ini adalah teks contoh untuk submateri pertama pada PARTISI I. Kamu bisa mengganti judul dan paragraf ini dengan materi yang sebenarnya langsung melalui HTML.</p>
+          </div>
+          <div class="material-topic glass">
+            <span class="material-tag">SUBMATERI 02</span>
+            <h4>Konsep Dasar dan Contoh</h4>
+            <p>Ini adalah teks contoh untuk submateri kedua pada PARTISI I. Tambahkan penjelasan, poin-poin penting, gambar, atau contoh sesuai kebutuhanmu.</p>
+          </div>
+          <button type="button" class="button secondary material-back">← Kembali ke daftar partisi</button>
+        </article>
+
+        <article class="material-detail" id="partisi-ii" hidden>
+          <span class="material-tag">PARTISI 02</span>
+          <h3>PARTISI II</h3>
+          <div class="material-topic glass">
+            <span class="material-tag">SUBMATERI 01</span>
+            <h4>Pengembangan Materi</h4>
+            <p>Ini adalah teks contoh untuk submateri pertama pada PARTISI II. Silakan ubah bagian ini dengan materi yang ingin kamu tampilkan.</p>
+          </div>
+          <div class="material-topic glass">
+            <span class="material-tag">SUBMATERI 02</span>
+            <h4>Penerapan dan Kesimpulan</h4>
+            <p>Ini adalah teks contoh untuk submateri kedua pada PARTISI II. Kamu bebas mengedit atau menambahkan isi materi sendiri di bagian HTML ini.</p>
+          </div>
+          <button type="button" class="button secondary material-back">← Kembali ke daftar partisi</button>
+        </article>
+      </div>
+    </section>
+
+  
+    <section class="section contact-section" id="kontak">
+      <div class="section-heading reveal">
+        <p class="eyebrow">06 — SAY HELLO</p>
+        <h2>Let's <span class="gradient-text">Connect!</span></h2>
+        <p class="muted">Punya pertanyaan atau ingin berkenalan? Temukan aku melalui kontak berikut.</p>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card glass reveal" href="https://wa.me/62xxxxxxxxxx" target="_blank" rel="noreferrer"><span>✆</span><div><small>WHATSAPP</small><strong>+62 xxx-xxxx-xxxx</strong></div><b>↗</b></a>
+        <a class="contact-card glass reveal" href="https://instagram.com/username" target="_blank" rel="noreferrer"><span>◎</span><div><small>INSTAGRAM</small><strong>@username</strong></div><b>↗</b></a>
+        <a class="contact-card glass reveal" href="https://github.com/username" target="_blank" rel="noreferrer"><span>⌘</span><div><small>GITHUB</small><strong>github.com/username</strong></div><b>↗</b></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#beranda">PORTO<span>FOLIO.</span></a><p>Made with curiosity & a little bit of coffee ☕</p><p>© <span id="year"></span> Nama Kamu</p></footer>
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+  
+<!-- FLOATING MUSIC PLAYER -->
+<div class="floating-music-player" id="floatingMusicPlayer">
+
+    <div class="music-header">
+        <span>♫ NOW PLAYING</span>
+        <button id="minimizeMusic" aria-label="Minimize music player">−</button>
+    </div>
+
+    <div class="music-content" id="musicContent">
+
+        <div class="music-info">
+            <div class="music-cover">♫</div>
+
+            <div class="music-details">
+                <h4 id="musicTitle">Your Favorite Song</h4>
+                <p id="musicArtist">Your Artist</p>
+            </div>
+        </div>
+
+
+        <div class="music-progress">
+            <span id="miniCurrentTime">0:00</span>
+            <input type="range" id="musicProgress"
+                   value="0" min="0" max="100">
+            <span id="miniDuration">0:00</span>
+        </div>
+
+        <div class="music-controls">
+            <button id="prevMusic">⏮</button>
+            <button id="playMusic" class="play-button">▶</button>
+            <button id="nextMusic">⏭</button>
+        </div>
+
+    </div>
+</div>
+
+<button id="openMusic" class="open-music-button">
+    ♫ Music
+</button>
+
+
+<script>
+(() => {
+  const loader = document.getElementById('introLoader');
+  if (!loader) return;
+  const start = Date.now();
+  const dismiss = () => {
+    const wait = Math.max(0, 1200 - (Date.now() - start));
+    setTimeout(() => loader.classList.add('hide'), wait);
+  };
+  if (document.readyState === 'complete') dismiss();
+  else window.addEventListener('load', dismiss, { once: true });
+})();
+</script>
+
+<!-- MUSIC VISUAL MOTION -->
+<script>
+(() => {
+  const mainPlay = document.getElementById('playPause');
+  const miniPlay = document.getElementById('playMusic');
+  const art = document.querySelector('.music-art');
+  const cover = document.querySelector('.floating-music-player .music-cover');
+  const setPlaying = (playing) => {
+    document.body.classList.toggle('music-playing', playing);
+    if (art) art.classList.toggle('music-playing-art', playing);
+    if (cover) cover.classList.toggle('music-playing-art', playing);
+  };
+  [mainPlay, miniPlay].filter(Boolean).forEach(btn => btn.addEventListener('click', () => {
+    // Give the visual a short feedback toggle; the audio script remains in control of playback.
+    setPlaying(btn.textContent.trim() === '❚❚' || btn.textContent.trim() === '⏸');
+  }));
+  const audio = document.getElementById('audioPlayer');
+  if (audio) {
+    audio.addEventListener('play', () => setPlaying(true));
+    audio.addEventListener('pause', () => setPlaying(false));
+    audio.addEventListener('ended', () => setPlaying(false));
+  }
+})();
+</script>
+
+<script src="script.js" defer></script>
+
+
+<!-- INTERACTIVE BACKGROUND -->
+<div class="interactive-atmosphere"></div>
+<canvas id="portfolioParticles"></canvas>
+
+<!-- SOFT CUSTOM CURSOR AURA -->
+<div class="portfolio-cursor" id="portfolioCursor"></div>
+
+
+</body>
+</html>
